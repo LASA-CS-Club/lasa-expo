@@ -1,0 +1,75 @@
+:root {
+  --expo-scarlet: #ff2400;
+  --legibility-blood-red: #8b1400;
+  --legibility-dark-red: #eb0e01;
+  --pale-pink: #ffdfda;
+  --sap-green: #4f7822;
+
+  --almost-white: #fdfdfd;
+  --almost-black: #111111;
+  --highlight-dark: #6e5107;
+  --highlight-light: #997009;
+}
+
+html, body { min-height: 100%; }
+
+body {
+  background-color: var(--almost-black);
+  background-image: linear-gradient(45deg, var(--legibility-blood-red), var(--almost-black));
+  background-repeat: no-repeat;
+  font-family: 'Rajdhani';
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+p { color: var(--pale-pink) }
+
+a { color: #aecaff; }
+a:hover { background-color: rgba(112, 126, 255, 0.2); }
+
+/* Header and logo */
+@keyframes logo-animation {
+  from { filter: blur(7px); }
+  to { filter: none; }
+}
+
+#logo {
+  font-size: 150px;
+  text-align: center;
+  color: var(--expo-scarlet);
+  font-weight: normal;
+  text-shadow: 10px 10px var(--almost-black);
+
+  animation: logo-animation 1s ease-in forwards;
+}
+
+#logo-name { font-weight: 700; transition: 0.6s; }
+#logo-name:hover { color: var(--pale-pink); }
+#logo-name:hover::after { content: '!' }
+
+.subtitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+time { background-color: var(--highlight-dark); }
+time:hover { background-color: var(--highlight-light); }
+
+/* Main section and Q&A */
+main p { font-size: 20px; }
+.question { background-color: var(--highlight-dark); }
+.question:hover { background-color: var(--highlight-light); }
+
+/* Footer and copyright */
+footer p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.cs-deco::before { content: '{'; }
+.cs-deco::after {content: '}'; }
