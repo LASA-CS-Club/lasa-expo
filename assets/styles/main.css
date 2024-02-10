@@ -30,6 +30,7 @@ p { color: var(--pale-pink) }
 
 a { color: #aecaff; }
 a:hover { background-color: rgba(112, 126, 255, 0.2); }
+a[target="_blank"]::after { content: ' ↗'; }
 
 /* Header and logo */
 @keyframes logo-animation {
