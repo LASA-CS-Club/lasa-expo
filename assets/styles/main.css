@@ -26,6 +26,14 @@ section {
   padding-right: 10%;
 }
 
+h2 {
+  font-size: 50px;
+  color: var(--almost-white);
+}
+h3 {
+  font-size: 35px;
+  color: var(--almost-white);
+}
 p { color: var(--pale-pink) }
 
 a { color: #aecaff; }
@@ -60,8 +68,25 @@ a[target="_blank"]::after { content: ' ↗'; }
 time { background-color: var(--highlight-dark); }
 time:hover { background-color: var(--highlight-light); }
 
-/* Main section and Q&A */
+/* Main section */
 main p { font-size: 20px; }
+
+#project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.project {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 500px;
+  border: 4px dotted var(--expo-scarlet);
+}
+
 .question { background-color: var(--highlight-dark); }
 .question:hover { background-color: var(--highlight-light); }
 

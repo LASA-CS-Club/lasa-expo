@@ -21,12 +21,94 @@
   <header>
     <h1 id="logo">LASA <span id="logo-name">Expo</span></h1>
     <p class="subtitle">A student-led technology exposition at our school</p>
-    <p class="subtitle"><time datetime="2024-02-20">February 20th, 2024</time> in Mr. Shockey’s Room</p>
+    <p class="subtitle"><time id="time" datetime="2024-02-20">February 20th, 2024</time> in Mr. Shockey’s Room</p>
   </header>
   <main>
     <section>
+      <h2>Featured Projects</h2>
+      <div id="project-container">
+        <article class="project">
+          <h3>Virtual reality demo</h3>
+          <p>
+            Come and experience a demo of the latest technology in virtual reality. Try on a VR headset that
+            was acquired by the CS team for an independent study project.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Panel by Obl.ong</h3>
+          <p>
+            An application for multi-tenant domain services (registry, registrar, zone management, and more) built with
+            Ruby on Rails. (This site uses an obl.ong domain!)
+          </p>
+        </article>
+        <article class="project">
+          <h3>RachitCaster</h3>
+          <p>
+            A maze game built using a custom raytracing engine. Explore the fascinating possibilities of graphics
+            programming.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Hob Physics Engine</h3>
+          <p>
+            A 2D physics engine supporting collisions and gravitational forces. It can handle tens of thousands of particles,
+            and it can be used to simulate various astrophysical events such as the formation of a galaxy.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Flight Simulation</h3>
+          <p>
+            Did you know a hobbyist can simulate flying an aircraft realistically from their own home? Explore the world
+            of flight simulation with a demo.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Arduino & Raspberry Pi</h3>
+          <p>
+            Microprocessors and whole computers are now readily available to us inexpensively. Combining them with physical
+            equipment such as LED strips can produce fascinating results.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Creating a Python Library</h3>
+          <p>
+            Learn how to publish your code to be usable by other people, and find out more about making your project
+            well-documented and accessible.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Facial Emotion Detection AI</h3>
+          <p>
+            It is possible to do interesting things with AI that seemed way more difficult before. Join us to see how
+            AI is used for image classification tasks.
+          </p>
+        </article>
+        <article class="project">
+          <h3>FangEngine</h3>
+          <p>
+            Play against a chess computer built by a LASA student. Can you beat it? Or better yet, can you code it to
+            become unbeatable?
+          </p>
+        </article>
+        <article class="project">
+          <h3>Gas Flare Monitors</h3>
+          <p>
+            Computer science has many real-world impacts, some of which may not be immediately obvious. See how software
+            can be used to detect unlit gas flares to improve safety at powerplants.
+          </p>
+        </article>
+        <article class="project">
+          <h3>Your Project?</h3>
+          <p>
+            It is not too late to <a href="#signup">sign up</a>.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>Q&A</h2>
       <p>
-        <span class="question">How can I show off my program?</span>
+        <span class="question" id="signup">How can I show off my program?</span>
         <a href="https://forms.gle/d5TT8LoQsqssr6bBA" target="_blank">Please fill out this quick form</a>
       </p>
       <p><span class="question">How do I attend?</span> Walk right in. No sign-up necessary.</p>
@@ -42,5 +124,14 @@
     <p>Made by your CS club captains. Ⓒ 2024 LASA<span class="cs-deco">CS</span></p>
     <p><a href="https://github.com/LASA-CS-Club/lasa-expo" target="_blank">Source code</a></p>
   </footer>
+
+  <!-- Changes date to "today" on the day of the event. -->
+  <script>
+    const timeBox = document.getElementById('time');
+    const eventDate = new Date(2024, 1, 20);
+    if ((new Date()).toDateString() === eventDate.toDateString()) {
+      timeBox.innerHTML = 'Today';
+    }
+  </script>
 </body>
 </html>
