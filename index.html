@@ -21,7 +21,7 @@
   <header>
     <h1 id="logo">LASA <span id="logo-name">Expo</span></h1>
     <p class="subtitle">A student-led technology exposition at our school</p>
-    <p class="subtitle"><time id="time" datetime="2024-02-20">February 20th, 2024</time> in Mr. Shockey’s Room</p>
+    <p class="subtitle"><time id="time" datetime="2024-02-20 11:30:00.000">February 20th, 2024 during lunch</time> in Mr. Shockey’s Room</p>
   </header>
   <main>
     <section>
@@ -130,7 +130,7 @@
     const timeBox = document.getElementById('time');
     const eventDate = new Date(2024, 1, 20);
     if ((new Date()).toDateString() === eventDate.toDateString()) {
-      timeBox.innerHTML = 'Today';
+      timeBox.innerHTML = 'Today during lunch';
     }
   </script>
 </body>
