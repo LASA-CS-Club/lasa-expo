@@ -8,6 +8,8 @@
   --almost-black: #111111;
   --highlight-dark: #6e5107;
   --highlight-light: #997009;
+
+  --winner: #6eff6e;
 }
 
 html, body { min-height: 100%; }
@@ -85,6 +87,11 @@ main p { font-size: 20px; }
   padding-right: 10px;
   width: 500px;
   border: 4px dotted var(--expo-scarlet);
+}
+.winner { border-color: var(--winner); }
+.winner-text {
+  font-weight: 600;
+  color: var(--winner)
 }
 
 .question { background-color: var(--highlight-dark); }
