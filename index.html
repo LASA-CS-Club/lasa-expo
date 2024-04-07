@@ -21,11 +21,12 @@
   <header>
     <h1 id="logo">LASA <span id="logo-name">Expo</span></h1>
     <p class="subtitle">A student-led technology exposition at our school</p>
-    <p class="subtitle"><time id="time" datetime="2024-02-20 11:30:00.000">February 20th, 2024 during lunch</time> in Mr. Shockey’s Room</p>
+    <p class="subtitle"><time id="time" datetime="2024-02-20 11:30:00.000">Expo Spring 2024 was a success!</time>
+      &ndash; tune in for something similar in the fall</p>
   </header>
   <main>
     <section>
-      <h2>Featured Projects</h2>
+      <h2>Featured Projects from Expo Spring 2024</h2>
       <div id="project-container">
         <article class="project">
           <h3>Virtual Reality Demo</h3>
@@ -100,7 +101,7 @@
         <article class="project">
           <h3>Your Project?</h3>
           <p>
-            It is not too late to <a href="#signup">sign up</a>.
+            Tune in for a possible exposition next school year!
           </p>
         </article>
       </div>
@@ -108,15 +109,8 @@
     <section>
       <h2>Q&A</h2>
       <p>
-        <span class="question" id="signup">How can I show off my program?</span>
-        <a href="https://forms.gle/d5TT8LoQsqssr6bBA" target="_blank">Please fill out this quick form</a>
-      </p>
-      <p><span class="question">How do I attend?</span> Walk right in. No sign-up necessary.</p>
-      <p><span class="question">Will there be food?</span> Yes! Pizza and donuts.</p>
-      <p>
-        <span class="question">Are there prizes?</span>
-        All participants who show off their work will get a participation token. A cash prize will be awarded to the person whose program
-        shows the most promise, as determined by a community vote. The winner will be announced during CS club the week after LASA Expo.
+        <span class="question" id="signup">When will the next expo be?</span>
+        We have not decided yet. We will post announcements ahead of time.
       </p>
     </section>
   </main>
@@ -124,14 +118,5 @@
     <p>Made by your CS club captains. Ⓒ 2024 LASA<span class="cs-deco">CS</span></p>
     <p><a href="https://github.com/LASA-CS-Club/lasa-expo" target="_blank">Source code</a></p>
   </footer>
-
-  <!-- Changes date to "today" on the day of the event. -->
-  <script>
-    const timeBox = document.getElementById('time');
-    const eventDate = new Date(2024, 1, 20);
-    if ((new Date()).toDateString() === eventDate.toDateString()) {
-      timeBox.innerHTML = 'Today during lunch';
-    }
-  </script>
 </body>
 </html>
